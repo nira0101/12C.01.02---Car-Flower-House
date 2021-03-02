@@ -1,0 +1,29 @@
+.driveCar {
+  animation: drive 10s;
+}
+
+.opDoor {
+  animation: openDoor 3s;
+}
+
+@keyframes drive {
+  0% {
+    transform: translate(10px, 10px);
+  }
+  90% {
+    transform: translate(200px, 20px);
+    opacity: 0%;
+  }
+  100% {
+    opacity: 0%;
+  }
+}
+
+@keyframes openDoor {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  100% {
+    transform: translate(20px, 0);
+  }
+}
